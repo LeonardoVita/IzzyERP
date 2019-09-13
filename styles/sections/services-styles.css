@@ -103,6 +103,7 @@ background: #153147;
     
 }
 
+
 @media (min-width : 1000px){ 
     .service-title{        
         font-size: calc(12px+ 1vmin);     
