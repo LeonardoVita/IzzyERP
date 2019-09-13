@@ -1,0 +1,144 @@
+.IzzyERP-services{
+    display: flex;
+    flex:1;
+    flex-direction: row;
+    height: 100vh; 
+    background: #f7f7f7;    
+    margin-left: 5vw; 
+}
+
+.services-side{
+ display: flex;
+ flex: 3;
+ height: 100vh;
+ 
+}
+.services-side > h2{
+    width: 100%;
+    margin-top: 5vh;
+    font-size: calc(2.5vw + 2.5vh);
+    font-weight: 900;
+    text-align: end;
+    color:#153147;   
+}
+.services-background{
+display: flex;
+flex-direction: column;
+flex: 12;
+height: 101vh;
+background: #153147;
+}
+.services-background >h2{
+    margin-top: 5vh;
+    font-size: calc(2.5vw + 2.5vh);
+    font-weight: 900;    
+    color:#153147;
+    color: #fff; 
+}
+.service-content{    
+    z-index: 2;
+    padding: 2vh 3vw 2vh 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.service-title{
+    padding: 1vh 0;
+    font-size: calc(1vw + 1vh);    
+    color:#fff; 
+    font-weight: 900;
+    text-align: start;   
+}
+.service-description{
+    padding: 1vh 0;
+    font-size: calc(0.8vw + 0.8vh);
+    text-align: start; 
+    font-weight: 600;
+    color:#fff;
+}
+.services-linha{
+    width: 50%;
+    margin: 1vh 2vw 1vh 0;    
+    border-width: 0.2vh 0 0 0;
+    border-style: solid;
+    border-color: #fff;
+}
+
+.text-service{
+    position: absolute;
+    top: 310%;
+    left: 10%;
+    color:#153147;    
+    font-size: calc(2.5vw + 2.5vh);
+    font-weight: 900;
+}
+
+.text-merlion{
+    position: absolute;
+    top: 399%;
+    left: 15%;
+    color:#000;
+    font-size: calc(1vw + 1vh);
+    font-weight: 900; 
+    transition: all 0.3s ease;
+}
+
+.text-merlion:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.services-logo-background{
+    position: absolute;
+    left: 60%;
+    top: 322%;
+    width: 50vw;
+    height: 80vh;
+    z-index: 0;
+    background-image: url('../../src/icons/logomarcas/merlion\ logo\ serviços.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;    
+    
+}
+
+@media (min-width : 1000px){ 
+    .service-title{        
+        font-size: calc(12px+ 1vmin);     
+    }
+    .service-description{        
+        font-size: calc(6px + 1vmin);        
+    }     
+}
+
+@media (max-width : 700px){
+    .services-logo-background{
+        background-image: url('../../src/mobile/portrait/Logotipo\ Merlion\ Azul\ menor.png'); 
+       
+    } 
+    .service-description{        
+        font-size: calc(2px + 1vmin);        
+    } 
+}
+
+@media (orientation: portrait){
+
+    .services-logo-background{ 
+        left: 55%;
+        top: 323%;
+        width: 50vw;
+        background-position: bottom;
+        
+    }
+    .services-side{
+        display: flex;
+        flex: 4;
+        height: 100vh;
+        
+    }
+    .text-merlion{
+        left: 12%;   
+    }
+    
+}

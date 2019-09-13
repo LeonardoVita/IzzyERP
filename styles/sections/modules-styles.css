@@ -1,0 +1,147 @@
+
+.IzzyERP-modules{
+    display: flex;
+    flex:1;
+    height: 100vh; 
+    
+    align-items: center;
+    justify-content: flex-end;
+    
+    margin-left: 5vw;
+
+}
+.modules-background{
+    height: 100vh;
+    width: 75vw;
+    background: #eee;
+    
+}
+.modules-glass-background{
+    width: 65vw;
+    height: 70vh;
+    padding: 5vh 3vw;
+    position: absolute;
+    top:150%;
+    left: 60%;
+
+    transform: translate(-50%, -50%);
+
+    border-radius: 90px;    
+    background: #ffffffef;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+    
+}
+
+.module-icon{
+    width: 8vw;
+    height: 10vh;
+    margin-bottom: 1vh;
+    align-self: center;
+    
+}
+.modules-glass-background > a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s ease;
+     
+}
+
+.modules-glass-background > a:hover{
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.modules-glass-background > a > p{
+    text-align: center;
+    color: #000;
+    width: 14vw;
+    height: 8vh;
+
+    font-size: calc(0.8vw + 0.8vh);
+    font-weight: 900;
+}
+.modules-background > h1 {
+    font-size: calc(2.5vw + 2.5vh);
+    text-align: start;
+    color:#153147;
+    margin-top: 5vh;
+
+    transform: translateX(-14%);
+}
+.IzzyERP-modules > a > h2{
+    position: absolute;
+    top: 197%;
+    left: 10%;
+    color:#000;
+    font-size: calc(1vw + 1vh);
+    font-weight: 900;
+    transition: all 0.3s ease;
+}
+.IzzyERP-modules > a > h2:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2)    
+}
+.modules-logo-background{
+    position: absolute;
+    left: 60%;
+    top: 126%;
+    width: 50vw;
+    height: 80vh;
+    z-index: 0;
+    background-image: url('../../src/icons/logomarcas/merlion\ logo\ serviços.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+}
+
+.break{
+    flex-basis: 100%;
+    height: 0;  
+}
+
+@media (max-width : 700px){
+    .modules-logo-background{
+        background-image: url('../../src/mobile/portrait/Logotipo\ Merlion\ Azul\ menor.png');
+    }
+}
+
+@media (orientation: portrait){
+
+    .modules-background{
+        height: 100vh;
+        width: 100vw;
+        background: #eee;
+        
+    } 
+
+    .modules-background > h1 {        
+        text-align: center;   
+        transform: none;
+    }
+
+    .modules-glass-background{
+        width: 85vw;
+        height: 75vh;        
+        top:150%;
+        left: 55%;
+
+        /*COMPATIBILIDADE COM NAVEGADORES*/
+        background: #ffffff;
+        background: rgba(255, 255, 255, 0.937);
+        background: #ffffffef;          
+    }
+
+    .modules-logo-background{
+        top: 121%;   
+    }
+    
+}

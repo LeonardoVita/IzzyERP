@@ -1,0 +1,106 @@
+/* Default styles */
+html, body{   
+    overflow-x: hidden;    
+    background: #f7f7f7;  		
+}
+
+#IzzyERP{
+    
+    overflow-x: hidden;   
+}
+p{ 	font-size:calc(1vw + 1vh); font-weight: 100; }
+h1{	font-size:calc(2vw + 2vh); font-weight: 900;	}
+h2{	font-size:calc(1.6vw + 1.6vh); font-weight: 500; } 
+h3{	font-size:calc(1.4vw + 1.4vh); font-weight: 400; }
+h4{	font-size:calc(1.2vw + 1.2vh); font-weight: 200; }
+
+label{	
+	font-size:calc(1.4vw + 1.4vh); 
+	font-weight: 900; 
+	 
+    color:whitesmoke;
+    cursor: pointer;	
+}
+
+span{	
+	font-size:inherit; 
+	font-weight: inherit; 
+	color: inherit; 
+	filter:	drop-shadow( 2px 2px 5px #000)	
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+/* Navbar Styles */
+
+aside{
+    position: fixed;  
+    left: 0;
+    top: 0;
+    width: 8vw;  
+    height: 100vh;
+    z-index: 3; 
+
+    background: #f7f7f7;
+    border-style: solid;
+    border-width:  1px;
+    border-color: whitesmoke;
+    
+    filter: drop-shadow( 1px 0 3px rgb(80, 79, 79))     
+}
+
+aside nav {
+    display: flex;
+    height: 80vh;   /* -20vh logo icon */
+    flex-direction: column;  
+    align-items: center;     
+    justify-content: space-around;
+       
+      
+}
+
+aside nav a{
+    transform: rotate(270deg);
+    text-decoration: none;
+    color: #222;
+    outline: none;
+    opacity: 0.8;
+    transition:  0.3s;
+    
+}
+
+aside nav a:hover {
+    text-decoration: none;
+    color: #222;
+    opacity: 1; 
+}
+
+
+aside nav a p{
+    font-size: calc(1.5vw + 1.5vh);    
+}
+
+
+/* Default sections */
+
+section{     
+    display: flex;
+    flex: 1;    
+    margin-bottom: 1vh;
+}
+
+
+/* empty space for modules carousel */
+
+.empty-space{    
+    height: 101vh;   
+}
+
+
+
+
+
+
+

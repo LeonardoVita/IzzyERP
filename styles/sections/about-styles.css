@@ -1,0 +1,254 @@
+.IzzyERP-about{
+    display: flex;
+    flex:1;
+    height: 100vh; 
+    
+    align-items: center;
+    justify-content: center;    
+    margin-left: 5vw;    
+}
+
+.about-text{
+    display: flex;
+    flex:2;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+.about-text > h1{
+    font-size: calc(2.5vw + 2.5vh);
+    text-align: end;
+    color:#153147;
+    margin: 10vh 1vw 0 0;
+}
+.about-contacts{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;    
+}
+.about-contacts > h2{
+    font-size: calc(1vw + 1vh);
+    font-weight: 900;
+    margin-right: 4vw;
+    margin-bottom: 3vh;
+    
+}
+
+.about-socialfollow-div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3vh;
+}
+.about-socialfollow > img{
+    width: calc(15px + 1.2vw);
+    transition: all 200ms;
+    margin-right: 1vw;
+    margin-top: 1vh
+    
+}
+.about-socialfollow:hover{
+    opacity: 0.7;
+}
+.about-background{
+    display: flex;    
+    flex: 8;
+    height: 100vh;
+    background: #162f42;
+}
+
+.about-logo{
+    position: absolute;
+    left: 60%;
+    top: 25%;
+    width: 50vw;
+    height: 80vh;
+    z-index: 0;
+    background-image: url('../../src/icons/logomarcas/merlion\ logo\ serviços.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    opacity: 0.8;    
+}
+
+.office-img{    
+    width: 35vw;
+    height: 30vh;
+    z-index: 1; 
+
+    position: absolute;
+    top: 25%;
+    left:12%;
+
+    background-image: url('../../src/img/office.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position:  top;
+
+    filter: drop-shadow( -3px 3px 6px #000);    
+}
+
+.explanation1-text{    
+    z-index: 2;    
+    width: 50vw;
+    height: 80vh;
+    margin-left: calc(20px + 12vw);
+    margin-top: 4vh;
+    margin-right: 10px;
+}
+
+.explanation1-text > p {    
+    color:white; 
+    font-size: calc(1vw + 1vh);    
+    font-weight: 600;
+    margin-bottom: 2vh;    
+}
+
+.about-linha{
+    width: 30vw;
+    margin: 3vh 0 3vh 2vw;    
+    border-width: 0.2vh 0 0 0;
+    border-style: solid;
+    border-color: #fff;     
+}
+
+.about-background > h1{    
+    color:#f7f7f7;
+    margin-top: 9vh;
+    font-size: calc(3vw + 3vh);
+    transform: translateX(-0.5vw);
+}
+
+.volta-home > img{
+    width: 5vw;
+    position: absolute;
+    top: 85%;
+    left: 26%;    
+}
+
+.volta-home > img:hover{    
+   opacity: 0.8; 
+}
+
+.volta-home-portrait{
+    display: none;
+}
+
+.btn-about{
+    display:inline-block;
+    bottom: 5%;
+    right: 5%; 
+    box-shadow: 0 6px 0 rgb(0, 143, 136);
+    padding: 15px;
+    position: absolute;
+    color: white;
+    background: #00C8BD;
+    border-radius: 23px; 
+    z-index: 2;       
+}
+
+.btn-about:active{
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
+@media (min-width : 1200px){ 
+    .explanation1-text > p {    
+    font-size: calc(12px + 1vmin);       
+    } 
+    
+    .explanation1-text{       
+        margin-left: calc(20px + 9vw);        
+    }
+}
+
+@media (max-width : 700px){
+    .explanation1-text > p {    
+        font-size: calc(0.9vw + 1vh);       
+    } 
+
+    .explanation1-text{       
+        margin-left: calc(20px + 7vw);        
+    }
+    .office-img{     
+        background-image: url('../../src/mobile/landscape/office\ menor.jpg');        
+    }
+
+    .volta-home > img{
+        width: calc(40px + 2vmin);
+        position: absolute;
+        top: 85%;
+        left: 26%;    
+    }
+
+    .btn-about{
+        padding: 10px;     
+    }
+    .about-logo{              
+        background-image: url('../../src/mobile/portrait/Logotipo\ Merlion\ Azul\ menor.png');
+        top: 20%;      
+    }
+}
+
+@media (orientation: portrait){
+
+    .office-img{     
+        top: 3%;
+        left:20%; 
+        width: 100%;
+        height: 15vh;         
+    }
+
+    .about-text{        
+        flex:2;
+               
+    }
+
+    .about-text > h1{   /*IZZY*/
+        font-size: calc(22px + 1vmin);
+        text-align: start;        
+        margin: 6vh 1vw 0 0;
+        padding-left: 7vw;
+    }
+
+    .about-background > h1{     /*ERP*/  
+        
+        margin-top: 9vh;
+        font-size: calc(25px + 1vmin);
+        transform: translateX(-1vw);
+    }
+
+    .about-background{
+        display: flex; 
+        flex-direction: column;   
+        flex: 7;        
+    }
+
+    .explanation1-text{            
+        width: auto;    
+
+        margin: 8vh 5px 0 5px
+    }
+    .volta-home-portrait{
+        display: inline-block;        
+    }
+    .volta-home-portrait > img{
+        width: calc(40px + 2vmin);
+        position: absolute;
+        top: 90%;
+        left: 12%;
+        transform: rotate(180deg);   
+    }
+    
+    .volta-home-portrait > img:hover{    
+       opacity: 0.8; 
+    }
+    .volta-home{
+        display: none;
+    }
+
+    .about-logo{       
+        top: 20%;      
+    }
+    
+}

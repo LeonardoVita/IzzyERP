@@ -1,0 +1,259 @@
+.carousel{   
+    width: 92vw;
+    margin-bottom: 0.2vh;
+}
+
+.carousel-modules-abs{
+    position: absolute;
+    top:201%;
+    right: 0;
+    z-index: 2;
+}
+
+.carousel-item{    
+    height: 100vh;     
+}
+
+.carousel-control-prev-icon{
+    position: absolute;
+    bottom: 20%;
+        
+}
+
+.carousel-control-next-icon{
+    position: absolute;
+    bottom: 20% 
+}
+
+.carousel-item-content{
+    display: flex; 
+    flex-direction: column;   
+    width: 90vw;
+    height: 100vh;
+    padding: 4vh 0 10vh 16vw;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+        
+}
+
+.carousel-header{
+    display: flex;
+    flex: 15;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 10px;    
+}
+
+.carousel-module-icon{
+    width: 8vw;
+    height: 10vh;
+    margin-bottom: 1vh;   
+}
+
+.carousel-header > h2{
+    font-size: calc(1.5vw + 1.5vh);
+    font-weight: 900;
+    color:#153147;
+}
+
+.carousel-description{
+    display: flex;
+    flex:25;
+    flex-direction: column;    
+    width: 100%;
+    margin-bottom: 20px; 
+}
+.carousel-description > h3{
+    font-size: calc(1.5vw + 1.5vh);
+    font-weight: 900;
+    color:#153147; 
+    margin-bottom: 2vh;    
+}
+.carousel-description > p{
+    width: 60vw;
+    font-size: calc(1.2vw + 1.2vh);
+    font-weight: 400;
+    color:#000;
+}
+.carousel-module-content{
+    display: flex;
+    flex: 60;
+    flex-direction: row;
+    width: 100%;
+    
+}
+.carousel-aplications{
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+    margin-right: 10px;
+}
+.carousel-aplications > h3{
+    font-size: calc(1.5vw + 1.5vh);
+    font-weight: 900;
+    color:#153147; 
+    margin-bottom: 2vh;  
+}
+.carousel-aplications >ol >li{
+    font-size: calc(1.1vw + 1.1vh);
+    font-weight: 400;
+    color:#000; 
+    margin-bottom: 10px; 
+}
+.carousel-presentation{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-right: 12vw;
+    
+    
+}
+.modules-carousel-img{
+    max-width:30vw;
+    height:auto;
+    border-radius: 10px;
+    filter: drop-shadow( -2px 2px 4px #000);
+    margin-right: 2.5vw ;
+    margin-top: 2vh; 
+    transition: all 0.3s ease;
+}
+.modules-carousel-img:hover{
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+}
+.carousel-indicators{
+    margin-top: 5vh;
+}
+.carousel-indicators li {    
+    width: 3vw;
+    height: 0.5vw;
+    margin: 6vh 2px 2vh 2px;    
+    cursor: pointer;  
+    background-color: #ddd;     
+    transition: all 0.3s ease;
+    filter: drop-shadow( 1px 1px 1px #000) ; 
+}
+
+.carousel-indicators li:hover{
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3); 
+    z-index: 1;   
+}
+
+.carousel-indicators .active {
+    width: 3vw;
+    height: 0.6vw;
+    margin: 6vh 2px 2vh 2px;
+    background-color: #1c8cfc;
+    filter: drop-shadow( 1px 1px 5px #1c8cfc);
+}
+
+.carousel-control-prev{
+    transition: background 800ms ease-out;
+    border-radius: 0 25% 25% 0;
+    filter: blur(10px);
+}
+
+.carousel-control-next{
+    transition: background 800ms ease-out;
+    border-radius:  25% 0 0 25%;
+    filter: blur(10px);
+}
+.carousel-control-prev:hover {
+    background: rgba(0, 0, 0, 0.4);    
+}
+
+.carousel-control-next:hover{
+    background: rgba(0, 0, 0, 0.4); 
+}
+.gallery{
+    display: none;    
+}
+
+.show{
+    display: flex; 
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.836);
+    z-index: 1000;  
+}
+
+.modules-logo{
+    position: absolute;
+    right: 77%;
+    top: 203%;
+    width: 25vw;
+    height: 100vh;
+    
+    background-image: url('../../src/icons/logomarcas/merlion\ logo\ modulos.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    opacity: 0.8;
+    z-index: 0;
+}
+
+.text-merlion-modules{
+    position: absolute;
+    top: 297%;
+    left: 10%;
+    z-index: 20;
+    font-size: calc(1vw + 1vh);
+    font-weight: 900;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.text-merlion-modules:hover{
+    color:#153147;
+}
+
+@media (max-width : 700px){
+    .modules-logo{        
+        background-image: url('../../src/mobile/portrait/Marca\ dágua\ menor.png');       
+    }
+}
+
+@media (orientation: portrait){
+
+    .modules-logo{ 
+        right: 70%;       
+        width: 30vw;
+        height: 100vh;       
+    }
+
+    .carousel-module-content{
+        
+        flex-direction: column;
+        width: 100%;
+        
+    }
+
+    .carousel-presentation{
+        align-items: center;
+        justify-content: center;
+        padding-right: 0;  
+    }
+
+    .modules-carousel-img{
+        max-width:60vw;
+        
+        margin-right: 10vw ;
+        
+    }
+
+    .text-merlion-modules{
+        top: 299%;  
+    }
+}
+      
+

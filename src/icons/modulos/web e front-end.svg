@@ -1,0 +1,8 @@
+<svg id="Camada_1" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="99" height="100" viewBox="0 0 99 100">
+  <defs>
+    <pattern id="pattern" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 96 96">
+      <image width="96" height="96" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAQAAABIkb+zAAAB5UlEQVR4Ae3ZsWoUURTG8b+gwcE2rzAuFsIUaS3tRCxEsBELC99BK9/AJmG3ShGQFO5ixFZIIz6BJKQR7DWwBrLgzmflsMwwd8ebi96j5/v3h/m1dwDA5/P5fL4tJpywQJm14JgdKoK7xi7KupoxRf/nf0AGOuwj7CIjjaG7LWSmmorOJshQ23R2YgpwRGcLU4BzOlOr3KZWFgAOcIADHOCA5zyzDYi/5IAUe4oQT+wCUtxyQPweNLfu2QSkuOaA+N1GK92yB/hT9xygC5Zs8Ycfo8geQQ4AKFBEBeQCANhHDG8PIC8AjNDASsgRAKC1LQHyBcBDFOg+5A6AT6inj2ABoEBDdoMDzlCnumnZ9INTppQpAVeDgCsDPv8U/WZfuZ4O8B4FmrFuByiiWTqACLduZ1GAeSrA5daVTTYRq10iPEWWCLCPmj7za19Q0yRvgJrusLq7qMkEYIP2NiwAXiLEK/r2GiFepHyKSQsQ4iahVQjlC3jHkL3NF5BiDnCAAxzggKg5YIH+RukAx9YBO9YBFbVtAIytAwoObQOgYExtGQBQsc0R53YB8Yt/2HKAAxzgAAfYBehiJbj3bwEc4IDvKKJ5PoA3KKJpPoAR3yJ+dJf5AGDEjDka2JwpJT6fz+f7z/cTZGT6rkC2TJ0AAAAASUVORK5CYII="/>
+    </pattern>
+  </defs>
+  <rect id="Retângulo_32" data-name="Retângulo 32" width="99" height="100" fill="url(#pattern)"/>
+</svg>

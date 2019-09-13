@@ -1,0 +1,225 @@
+.IzzyERP-Home{
+    position: fixed;
+    z-index: 20;    
+    top: 0;
+    right: 0;
+    left:0;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+    background: #f7f7f7;
+    transform-origin: right;
+    
+
+    -webkit-transition: left 800ms, transform 800ms;
+    transition: left 800ms, transform 800ms;          
+}
+.IzzyERP-Home.out{
+    left: 100%;
+    transform: scaleX(0);
+}
+.home-text{
+    display:flex;
+    flex:3;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 2vw;    
+    
+}
+.home-text > h1{
+    margin: 18vh 0 0 8vw;    
+    font-size: calc(6vw + 6vh);
+    font-weight: 900;
+    width: 20vw;
+    color:#153147;
+    
+}
+.home-linha{
+    width: 11vw;
+    margin-left: 9vw;
+    margin-top: 7vh;
+    border-width: 0.3vh 0 0 0;
+    border-style: solid;
+    border-color: #000;
+    color:#153147;
+}
+.home-text > p{ 
+    font-size: calc(1.2vw + 1.2vh);
+    font-weight: 900;      
+    margin-left: 9vw;
+    margin-top: 4vh;
+    width: 20vw;
+    color:#153147;
+   
+}
+.contacts{   
+    display: flex;
+    flex: 1;
+    justify-content: space-between;    
+    align-items: flex-end;
+    width: 100%;    
+    padding-right: 1.5vw;   
+}
+.contacts > a > h2{
+    font-size: calc(1vw + 1vh);
+    font-weight: 900;    
+    margin: 0 0 5vh 1.5vw;
+    transform: translateY(50%);
+    color: #000;
+    transition: all 0.3s ease;
+}
+
+.contacts > a>h2:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+.home-socialfollow{
+    display: inline-block;
+    transition: all 200ms;
+    
+}
+.home-socialfollow:hover{
+    opacity: 0.8;
+    transform: translateY(-16px);
+}
+
+.home-socialfollow  > img{
+    width: calc(15px + 1.2vw);
+    margin-bottom: 5vh;
+    transform: translateY(50%);
+}
+.home-background{
+    flex:7;
+
+    background-image: url('../../src/img/Pc.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:  left center;
+
+
+}
+.home-background > h1{
+    color:#f7f7f7;
+    padding: 0;
+    margin-top:18vh;
+    font-size: calc(6vw + 6vh);
+    transform: translateX(-1vw);
+}
+.home-background > a > img{
+    width: 5vw;
+    position: absolute;
+    top: 82%;
+    left: 36%; 
+    
+    transform: translate(-50%, -50%);
+}
+
+.home-background > a > img:hover{
+    opacity: 0.8;
+}
+.learn-more{    
+    position: absolute;
+    top: 82%;
+    left: 45%;
+    
+    color:#fff;
+    font-weight: 900;
+
+    transform: translate(-50%, -50%);
+}
+
+.btn-home{
+    display:inline-block;
+    top: 60%;
+    left: 10%;    
+    box-shadow: 0 6px 0 rgb(0, 143, 136);
+    position: absolute;
+    color: white;
+    background: #00C8BD;
+    border-radius: 23px;
+    padding: 15px;
+    z-index: 3;
+}
+.btn-home:active{ 
+    box-shadow: none;
+    transform: translateY(5px);
+}
+@media (max-width : 700px){
+    .home-background{    
+        background-image: url('../../src/mobile/landscape/Pc2\ menor.png');           
+    }
+
+    .home-background > a > img{               
+        top: 90%;
+        width: calc(40px + 2vmin);               
+    }
+
+    .learn-more{    
+        top: 90%;
+        left: 46%;       
+    }
+    .btn-home{
+        padding: 10px;        
+    }
+}
+
+@media (orientation: portrait ){    
+    .home-text > h1{           
+        font-size: calc(4vw + 4vh);
+        font-weight: 900;
+        width: 15vw;
+        margin: 18vh 0 0 5vw;       
+    } 
+
+    .home-linha{  
+        width: 15vw;      
+        margin-left: 6vw;     
+    }
+
+    .home-text > p{              
+        margin-left: 6vw;
+    }
+
+    .home-background{    
+        background-image: url('../../src/mobile/portrait/Ínicio\ –\ mobile.png');           
+    }
+
+    .contacts{     
+        flex-direction: column;
+        justify-content: flex-end;    
+        align-items: space-between;     
+           
+    }
+    .contacts > a > h2{
+        font-size: calc(10px + 1vmin);
+        margin: 0 20px 15px 1.5vw; 
+    }
+
+    .home-socialfollow  > img{
+        width: calc(15px + 1.2vw);
+        margin-bottom: 5vh;
+        margin-right: 6px;
+        transform: translateY(50%);
+    }   
+
+    .home-background > h1{        
+        margin-top:18vh;
+        font-size: calc(4vw + 4vh);
+        transform: translateX(-1.2vw);
+    }
+
+    .home-background > a > img{
+        width: calc(30px + 5vw);        
+        top: 90%;
+        left: 42%;       
+    }
+
+    .learn-more{    
+        top: 90%;
+        left: 52%; 
+        transform: translateY(-50%);        
+        font-size: calc(10px + 1vmin);
+    }
+}
