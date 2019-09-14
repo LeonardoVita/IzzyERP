@@ -2,7 +2,7 @@
     display: flex;
     flex:1;
     height: 100vh; 
-    height: calc(var(--vh, 1vh) * 100);
+    /* height: calc(var(--vh, 1vh) * 100); */
     align-items: center;
     justify-content: center;    
     margin-left: 5vw;    
@@ -14,7 +14,7 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
+    /* height: calc(var(--vh, 1vh) * 100); */
 }
 .about-text > h1{
     font-size: calc(2.5vw + 2.5vh);
@@ -64,7 +64,7 @@
     top: 6%;
     width: 50vw;
     height: 80vh;
-    height: calc(var(--vh, 1vh) * 80);
+    /* height: calc(var(--vh, 1vh) * 80); */
     z-index: 0;
     background-image: url('../../src/icons/logomarcas/merlion\ logo\ serviços.png');
     background-repeat: no-repeat;
