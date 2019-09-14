@@ -224,24 +224,37 @@
 }
 
 @media (orientation: portrait){
+    .carousel-item-content{       
+        padding: 0.5vh 0 10vh 16vw;           
+    }
+
+    .carousel-header{        
+        margin-bottom: 0;    
+    }
 
     .modules-logo{ 
-        right: 70%;       
+        right: 73%;       
         width: 30vw;
         height: 100vh;       
     }
 
     .carousel-module-content{
-        
+        flex: 60;
         flex-direction: column;
         width: 100%;
         
-    }
+    }    
 
     .carousel-presentation{
         align-items: center;
         justify-content: center;
         padding-right: 0;  
+    }
+
+    .modules-carousel-img{        
+        filter: drop-shadow( -2px 2px 4px #000);        
+        
+        
     }
 
     .modules-carousel-img{
@@ -252,7 +265,8 @@
     }
 
     .text-merlion-modules{
-        top: 74%;  
+        top: 74%; 
+        left: 9%; 
     }
 }
       
