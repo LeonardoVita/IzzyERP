@@ -5,8 +5,8 @@ html, body{
 }
 
 #IzzyERP{
-    
-    overflow-x: hidden;   
+    position: relative;
+    overflow: hidden;   
 }
 p{ 	font-size:calc(1vw + 1vh); font-weight: 100; }
 h1{	font-size:calc(2vw + 2vh); font-weight: 900;	}

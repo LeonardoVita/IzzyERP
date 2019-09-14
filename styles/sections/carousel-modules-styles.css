@@ -5,7 +5,7 @@
 
 .carousel-modules-abs{
     position: absolute;
-    top:201%;
+    top:50.2%;
     right: 0;
     z-index: 2;
 }
@@ -190,7 +190,7 @@
 .modules-logo{
     position: absolute;
     right: 77%;
-    top: 203%;
+    top: 50.2%;
     width: 25vw;
     height: 100vh;
     
@@ -204,7 +204,7 @@
 
 .text-merlion-modules{
     position: absolute;
-    top: 297%;
+    top: 74%;
     left: 10%;
     z-index: 20;
     font-size: calc(1vw + 1vh);
@@ -252,7 +252,7 @@
     }
 
     .text-merlion-modules{
-        top: 299%;  
+        top: 74%;  
     }
 }
       

@@ -75,7 +75,7 @@ background: #153147;
 
 .text-merlion{
     position: absolute;
-    top: 399%;
+    top: 98.8%;
     left: 15%;
     color:#000;
     font-size: calc(1vw + 1vh);
@@ -92,7 +92,7 @@ background: #153147;
 .services-logo-background{
     position: absolute;
     left: 60%;
-    top: 322%;
+    top: 80%;
     width: 50vw;
     height: 80vh;
     z-index: 0;
@@ -127,7 +127,7 @@ background: #153147;
 
     .services-logo-background{ 
         left: 55%;
-        top: 323%;
+        top: 80%;
         width: 50vw;
         background-position: bottom;
         
