@@ -249,21 +249,26 @@
         align-items: center;
         justify-content: center;
         padding-right: 0;  
-    }
-
-    .modules-carousel-img{        
-        filter: drop-shadow( -2px 2px 4px #000);        
-        
-        
-    }
+    }  
 
     .modules-carousel-img{
         max-width:60vw;
-        
+         box-shadow: -1px 1px 3px #000;
         margin-right: 10vw ;
         
+    }    
+
+    .carousel-indicators li {    
+        width: 4vw;
+        height: 1vh;       
+        box-shadow:  1px 1px 1px #000
     }
 
+    .carousel-indicators .active {
+        width: 5vw;
+        height: 1.1vh;       
+        box-shadow: 1px 1px 2px #1c8cfc;
+    }
     .text-merlion-modules{
         top: 74%; 
         left: 9%; 

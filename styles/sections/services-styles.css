@@ -119,7 +119,7 @@ background: #153147;
        
     } 
     .service-description{        
-        font-size: calc(2px + 1vmin);        
+        font-size: calc(2px + 2vmin);        
     } 
 }
 
@@ -137,6 +137,13 @@ background: #153147;
         flex: 4;
         height: 100vh;
         
+    }
+    .service-title{
+        padding: 5px 0;           
+    }
+
+    .services-linha{        
+        margin: 5px 2vw 1vh 0;        
     }
     .text-merlion{
         left: 12%;   

@@ -118,6 +118,12 @@
 }
 
 @media (orientation: portrait){
+    /* .IzzyERP-modules{
+        
+        height: calc(var(--vh, 1vh) * 100);
+       
+    
+    } */
 
     .modules-background{
         height: 100vh;
