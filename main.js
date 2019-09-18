@@ -1,13 +1,13 @@
 
-// let vh = screen.height * 0.01;
-// document.documentElement.style.setProperty('--vh',`${vh}px`);
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh',`${vh}px`);
 
-// window.addEventListener('resize', () => {
+window.addEventListener('resize', () => {
 
-//     let vh = screen.height * 0.01;
-//     document.documentElement.style.setProperty('--vh', `${vh}px`);
+    let vh = window.innerHeigh * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
 
-// });
+});
 
 const out = document.querySelector('#sai-home');
 const on = document.querySelector('#volta-home');

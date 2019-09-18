@@ -51,7 +51,7 @@ background: #153147;
 }
 .service-description{
     padding: 1vh 0;
-    font-size: calc(0.8vw + 0.8vh);
+    font-size: calc(4px + 1vmin);
     text-align: start; 
     font-weight: 600;
     color:#fff;
@@ -114,12 +114,19 @@ background: #153147;
 }
 
 @media (max-width : 700px){
+    .services-side{       
+        flex: 2;        
+    }  
+
     .services-logo-background{
         background-image: url('../../src/mobile/portrait/Logotipo\ Merlion\ Azul\ menor.png'); 
        
     } 
     .service-description{        
-        font-size: calc(2px + 2vmin);        
+        font-size: calc(3px + 1vmin);        
+    }
+    .text-merlion{        
+        left: 10%;        
     } 
 }
 
@@ -147,6 +154,9 @@ background: #153147;
     }
     .text-merlion{
         left: 12%;   
+    }
+    .service-description{        
+        font-size: calc(1px + 2vmin);        
     }
     
 }

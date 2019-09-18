@@ -1,10 +1,10 @@
 /* Default styles */
-html, body{   
+html, body{     
     overflow-x: hidden;    
     background: #f7f7f7;  		
 }
 
-#IzzyERP{    
+#IzzyERP{       
     position: relative;
     overflow: hidden;   
 }

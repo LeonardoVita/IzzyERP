@@ -194,13 +194,10 @@
     }
 }
 
-@media (orientation: portrait){
-    /* .IzzyERP-about{
-         
-        height: calc(var(--vh, 1vh) * 100);
-        
-    }   */
 
+@media (orientation: portrait){   
+    
+    
     .office-img{     
         top: 0.5%;
         left:22%; 
@@ -241,7 +238,7 @@
     .volta-home-portrait > img{
         width: calc(40px + 2vmin);
         position: absolute;
-        top: 22%;
+        top: 21%;
         left: 12%;
         transform: rotate(180deg);   
     }
@@ -254,7 +251,7 @@
     }
 
     .about-logo{       
-        top: 5%;      
+        top: 4.9%;      
     }
     
 }
